@@ -79,17 +79,14 @@ nav ul li a:hover::after{
   color: #ababab;
   
 }
-#row{
-  
-  display: flex;
+#row1{
+  display: flex;  
   justify-content: space-between;
   flex-wrap: wrap;
   
 }
 #about-col-1{
-  
-  width:300px;
-  height:400px ;
+  flex-basis: 35%;
   margin-left: 50px;
 }
 #about-col-1 img{
@@ -97,9 +94,7 @@ nav ul li a:hover::after{
   border-radius: 15px;
 }
 #about-col-2{
-  
-  margin-left: 25px;
-  
+  flex-basis: 60%;
 }
 
 .sub-title{
@@ -260,6 +255,9 @@ nav ul li a:hover::after{
   background: #4c41f1;
 }
 /* ---------------contact---------------- */
+.row{
+  display: flex;
+}
 .contact-left{
   flex-basis: 35%;
 
@@ -325,7 +323,7 @@ form .btn2{
 .fa-solid.fa-heart{
   color: #ff004f;
 }
-/* ---------------------responsice css------------------- */
+/* ---------------------responsive css------------------- */
 nav .fas{
   display: none;
 }
@@ -376,17 +374,23 @@ nav .fas{
     font-size: 40px;
     margin-left: 10px;
   }
-  .about-col-1, .about-col-2{
+ 
+  #row1{
     flex-basis: 100%;
+    flex-direction: column;
+    
   }
-  .about-col-1{
+  #about-col-1{
     margin-bottom: 30px;
-    width:300px;
-    height:400px;
-    margin-left: 50px;
+    margin-left: 80px;
+    width: 300px;
+    height: 400px;
   }
-  .about-col-2{
+  #about-col-2{
     font-size: 14px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .tab-links{
     font-size: 16px;
@@ -394,6 +398,9 @@ nav .fas{
   }
   .work-list{
     display: grid;
+  }
+  .row{
+    display: block;
   }
   .contact-left, .contact-right{
     flex-basis: 100%;
