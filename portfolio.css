@@ -243,6 +243,7 @@ nav ul li a:hover::after{
 .btn{
   display: block;
   margin: 50px auto;
+  margin-left: -0px;
   width: fit-content;
   border: 1px solid #4c45c2;
   padding: 14px 50px;
@@ -290,7 +291,13 @@ nav ul li a:hover::after{
 }
 .btn.btn2{
   display: inline-block;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
+  transition: transform 0.5s, background0.5s;
+}
+.btn.btn2:hover{
+  transform: scale(1.05);
+  background: #4c45c2;
 }
 .contact-right form{
   width: 100%;
@@ -408,4 +415,9 @@ nav .fas{
   .copyright{
     font-size: 14px;
   }
+}
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
